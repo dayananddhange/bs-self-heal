@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>XPath Practice Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 40px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .highlight {
+      color: darkblue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>XPath Advanced Locator Practice</h1>
+  <p>This page is designed to test advanced XPath axes: <code>following-sibling</code>, <code>ancestor</code>, <code>preceding</code>, etc.</p>
+
+  <div class="section">
+    <h2>Team Members</h2>
+    <div class="card" id="member1">
+      <h3>Name: <span class="highlight">Alice</span></h3>
+      <p class="role">Role: Developer</p>
+      <p>Department: Engineering</p>
+    </div>
+
+    <div class="card" id="member2">
+      <h3>Name: <span class="highlight">Bob</span></h3>
+      <p class="role">Role: QA</p>
+      <p>Department: Quality Assurance</p>
+    </div>
+
+    <div class="card" id="member3">
+      <h3>Name: <span class="highlight">Charlie</span></h3>
+      <p class="role">Role: Product Manager</p>
+      <p>Department: Product</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Nested Structure</h2>
+    <ul id="nested-list">
+      <li>
+        <span class="level1">Parent A</span>
+        <ul>
+          <li>
+            <span class="level2">Child A1</span>
+            <ul>
+              <li><span class="level3">Grandchild A1a</span></li>
+              <li><span class="level3">Grandchild A1b</span></li>
+            </ul>
+          </li>
+          <li><span class="level2">Child A2</span></li>
+        </ul>
+      </li>
+      <li>
+        <span class="level1">Parent B</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Sibling Section</h2>
+    <p><b>Label:</b> Email</p>
+    <input type="text" name="email" />
+
+    <p><b>Label:</b> Phone</p>
+    <input type="text" name="phone" />
+  </div>
+
+  <div class="section">
+    <a href="selfheal-form.html">🔙 Back to Form Page</a>
+  </div>
+
+</body>
+</html>
